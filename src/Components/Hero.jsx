@@ -19,7 +19,7 @@ function Hero() {
           </h1>
 
           <h2>
-            Frontend <span>Developer</span>
+            FullStack <span>Developer</span>
           </h2>
 
           <p>

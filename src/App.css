@@ -44,7 +44,7 @@ textarea {
 }
 
 .nav-container {
-  max-width: 1200px;
+  max-width: 1350px;
   height: 72px;
   margin: auto;
   padding: 0 25px;
@@ -115,20 +115,19 @@ textarea {
 
 
 .hero {
-  min-height: 100vh;
-  padding: 150px 25px 80px;
+  min-height: 90vh;
+  padding: 120px 25px 60px;
   position: relative;
   overflow: hidden;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .hero-bg-circle {
@@ -241,7 +240,6 @@ textarea {
   border-color: #8b5cf6;
 }
 
-/* Hero image */
 
 .hero-image {
   position: relative;
@@ -254,8 +252,8 @@ textarea {
 
 .image-glow {
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   background: #6d28d9;
   border-radius: 50%;
   filter: blur(30px);
@@ -264,10 +262,9 @@ textarea {
 
 .profile-circle {
   position: relative;
-
-  width: 390px;
-  height: 390px;
-
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
   border-radius: 50%;
 
   background: linear-gradient(
@@ -282,8 +279,22 @@ textarea {
   align-items: center;
   justify-content: center;
 
-  box-shadow:
-    0 0 80px rgba(139, 92, 246, 0.4);
+  box-shadow: 0 0 80px rgba(139, 92, 246, 0.4);
+}
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .profile-placeholder {
@@ -331,21 +342,19 @@ textarea {
   right: 0;
 }
 
-/* =========================
-   SECTIONS
-========================= */
+
 
 .section {
-  padding: 100px 25px;
+  padding: 75px 25px;
 }
 
 .section-container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
 }
 
 .section-heading {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .section-heading span {
@@ -380,7 +389,7 @@ textarea {
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -650,11 +659,11 @@ textarea {
   border: 1px solid #1d2133;
   border-radius: 20px;
 
-  padding: 60px;
+  padding: 45px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 45px;
 }
 
 .contact-info > span {
@@ -748,7 +757,7 @@ textarea {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
 
   display: flex;
@@ -816,9 +825,8 @@ textarea {
 
 .profile-circle {
   position: relative;
-  width: 390px;
-  width: clamp(250px, 30vw, 390px);
-height: clamp(250px, 30vw, 390px);
+  width: 350px;
+  height: 350px;
   overflow: hidden;
 
   background: linear-gradient(
@@ -838,13 +846,10 @@ height: clamp(250px, 30vw, 390px);
 
 .profile-circle img {
   display: block;
-  width: clamp(250px, 30vw, 390px);
-  height: clamp(250px, 30vw, 390px);
-  
-
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
-
   border-radius: 50%;
 }
 
@@ -898,12 +903,3 @@ height: clamp(250px, 30vw, 390px);
 }
 
 
-
-.profile-circle img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-}
